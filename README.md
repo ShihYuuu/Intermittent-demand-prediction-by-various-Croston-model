@@ -2,37 +2,9 @@
 Use croston model to predict intermittent demand and compare various croston model.
 
 Crostonpackage.ipynb: python的croston套件
-
-
-
--         
-read_data( data
-source ): 讀取檔案
-
-
-
-Output: dataframe of data
-
-
-
--         
-croston.fit_croston( input_data,
-predict_length, croston_model_type )
-
-
-
-croston_model_type:
-'original', 'sba', 'sbj'
-
-
-
-Output: dictionary of forecast{'croston_model',
-
-
-
-                                    'croston_fittedvalues',
-
-                                    'croston_forecast'}
+- croston.fit_croston( input_data, predict_length, croston_model_type )
+  - croston_model_type: 'original', 'sba', 'sbj'
+-   Output: dictionary of forecast{'croston_model', 'croston_fittedvalues', 'croston_forecast'}
 
 
 
@@ -40,18 +12,7 @@ Output: dictionary of forecast{'croston_model',
 
 
 
-function.ipynb: 網路上找到別人自己寫的croston function
-
-
-
-# from https://zhuanlan.zhihu.com/p/121831933
-
-
-
- 
-
-
-
+function.ipynb: croston function by hand-made
 -         
 Croston(
 input_data, predict_length, alpha )
