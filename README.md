@@ -28,7 +28,7 @@ croston by python package
 - ses_method (input_data, alpha, n_steps)
 '''
 ## deepCroston.ipynb: deeprenewal套件中的croston function
-```
+```python
 CrostonForecastPredictor(Freq =‘1D’,       # 時間區間
                            prediction_length ,   #預測長度 
                            variant = 'original', 
