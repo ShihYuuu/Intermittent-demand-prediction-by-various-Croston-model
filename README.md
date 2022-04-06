@@ -7,12 +7,14 @@ croston by python package
          - croston_model_type: 'original', 'sba', 'sbj'
          - Output: dictionary of forecast{'croston_model', 'croston_fittedvalues', 'croston_forecast'}
 
-## function.ipynb: croston function by hand-made
+## function.ipynb: 
+croston function by hand-made
 - Croston(input_data, predict_length, alpha )
          - Output: dataframe of forecast{"Demand", "Forecast", "Period","Level", "Error"}
 
-## transformCroston.ipynb: Various croston's transform methods
-'''
+## transformCroston.ipynb: 
+Various croston's transform methods
+```python
 - croston_method (input_data, alpha, n_steps)
          - alpha (default = 0.1 )
          - n_steps: number of predict length ( default = 1)
@@ -26,8 +28,9 @@ croston by python package
 - hes_method (input_data, alpha, n_steps)
 - les_method (input_data, alpha, n_steps) 
 - ses_method (input_data, alpha, n_steps)
-'''
-## deepCroston.ipynb: deeprenewal套件中的croston function
+```
+## deepCroston.ipynb: 
+croston function in deeprenewal package
 ```python
 CrostonForecastPredictor(Freq =‘1D’,       # 時間區間
                            prediction_length ,   #預測長度 
@@ -36,20 +39,7 @@ CrostonForecastPredictor(Freq =‘1D’,       # 時間區間
                            no_of_params=2
                            )
 
-```
-
-Output: predictor
-
+corston_predictor(input_training_data)
+```      
 
 
- 
-
-
-
--         
-corston_predictor(
-input_training_data )
-
-
-
-Output: forecast data
